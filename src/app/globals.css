@@ -4,20 +4,62 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  --paragraph: #00000070;
+  --tag: #00000050;
+  --input: #00000030;
+  --border: #00000010;
+  --secondary: #f0f0f0;
+  --button: #ffffff;
+  --hover: #f0f0f050;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark mode colors */
+:root.dark {
+  --background: rgba(0 0 0.67%); /* Darker background */
+  --foreground: #ffffff; /* Lighter foreground */
+  --paragraph: #ffffff70;
+  --tag: #ffffff50;
+  --input: #ffffff30;
+  --border: #ffffff10;
+  --secondary: #2E2E2E;
+  --button: #000000;
+  --hover: #2e2e2e50;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-saans-sans), Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+p {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  font-size: 14px;
 }
 
 @layer utilities {

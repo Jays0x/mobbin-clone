@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        saans: ['var(--font-saans-sans)'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -15,5 +18,6 @@ const config: Config = {
     },
   },
   plugins: [],
+  darkMode: 'class',
 };
 export default config;
