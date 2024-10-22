@@ -18,7 +18,7 @@ function page() {
 
           <TextInput />
 
-          <Link href='#'><PrimaryButton /></Link>
+          <Link href='/browse/ios/apps'><PrimaryButton /></Link>
 
           <div className='mb-12'>
             <p className='text-[var(--paragraph)] flex gap-2 items-center justify-center'>Didn&apos;t receive the code? <strong className='text-[var(--foreground)] cursor-pointer hover:border-b hover:border-[var(--foreground)]' onClick={()=> alert('Code sent successfully')} >Resend</strong></p>

@@ -7,7 +7,7 @@ export default function Logo() {
   const { resolvedTheme } = useTheme();
 
   return (
-    <div className='mb-5'>
+    <div className=''>
       {resolvedTheme === 'dark' ? (
         <Image
           src={WhiteLogo} // White logo for dark mode

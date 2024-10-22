@@ -26,7 +26,11 @@ function page() {
 
           <Email />
 
-          <Link href='#'><PrimaryButton /></Link>
+          <div className='flex justify-end items-center mb-5'>
+            <Link href='/forgot-password' className='hover:border-b hover:border-[var(--foreground)]'>Need help with password?</Link>
+          </div>
+
+          <Link href='/browse/ios/apps'><PrimaryButton /></Link>
 
           <div className='mb-12'>
             <p className='text-[var(--paragraph)] flex gap-2 items-center justify-center'>Don&apos;t have an account? <Link className='text-[var(--foreground)] cursor-pointer hover:border-b hover:border-[var(--foreground)]' href='/signup'>Sign up</Link></p>
